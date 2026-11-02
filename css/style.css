@@ -1,0 +1,66 @@
+```css
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* ID SELECTOR */
+#welcome {
+    background-color: #315c43;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* DESCENDANT SELECTOR */
+header p {
+    font-size: 16px;
+}
+
+/* CHILD SELECTOR */
+main > article {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* CLASS SELECTOR */
+.animal {
+    text-align: center;
+    border: 2px solid #315c43;
+}
+
+/* ADJACENT SELECTOR */
+h2 + img {
+    margin-top: 10px;
+}
+
+/* Image styling */
+.animal img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* BONUS: Put all three articles in one row */
+main {
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+}
+
+main article {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Make website responsive on smaller screens */
+@media (max-width: 650px) {
+    main {
+        flex-direction: column;
+    }
+}
+```
